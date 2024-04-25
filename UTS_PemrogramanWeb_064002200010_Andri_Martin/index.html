@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blabla Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Memuat jQuery -->
+</head>
+<body>
+
+<!-- Halaman 1: Blabla Online Store -->
+<header id="header-halaman-1">
+    <h4>Welcome to Blabla online store</h4>
+    <h1>Blabla store</h1>
+    <div>
+        <section id="login-section">
+            <input type="submit" value="Login">
+        </section>
+    </div>
+</header>
+
+<main>
+    <section id="marketplace-section">
+        <h2>Marketplace</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl rhoncus mattis rhoncus urna neque viverra. Orci ac auctor augue mauris augue neque gravida in. Tristique senectus et netus et malesuada fames ac. Amet volutpat consequat mauris nunc congue nisi. Posuere ac ut consequat semper. Et malesuada fames ac turpis. Id cursus metus aliquam eleifend mi. Cras pulvinar mattis nunc sed blandit. Sit amet nulla facilisi morbi tempus. Sed turpis tincidunt id aliquet risus. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Pulvinar etiam non quam lacus suspendisse faucibus. Sagittis orci a scelerisque purus semper eget duis at tellus. Feugiat pretium nibh ipsum consequat. In est ante in nibh mauris cursus mattis molestie. Est sit amet facilisis magna etiam. Facilisis gravida neque convallis a cras semper. Nunc non blandit massa enim nec dui nunc mattis.</p>
+    </section>
+</main>
+
+<!-- Halaman 2: Form Login -->
+<div class="login-form" style="display: none;">
+    <form action="/login" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+<!-- Halaman 3: Blabla Online eCommerce Store -->
+<header style="display: none;" id="header-halaman-3">
+</header>
+<main style="display: none;" id="main-halaman-3">
+    <nav>
+        <button>Logout</button>
+    </nav>
+    <section id="marketplace-section-2">
+        <h2>Marketplace</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl rhoncus mattis rhoncus urna neque viverra. Orci ac auctor augue mauris augue neque gravida in. Tristique senectus et netus et malesuada fames ac. Amet volutpat consequat mauris nunc congue nisi. Posuere ac ut consequat semper. Et malesuada fames ac turpis. Id cursus metus aliquam eleifend mi. Cras pulvinar mattis nunc sed blandit. Sit amet nulla facilisi morbi tempus. Sed turpis tincidunt id aliquet risus. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Pulvinar etiam non quam lacus suspendisse faucibus. Sagittis orci a scelerisque purus semper eget duis at tellus. Feugiat pretium nibh ipsum consequat. In est ante in nibh mauris cursus mattis molestie. Est sit amet facilisis magna etiam. Facilisis gravida neque convallis a cras semper. Nunc non blandit massa enim nec dui nunc mattis.</p>
+        <button>Data Produk</button>
+    </section>
+</main>
+
+<!-- Halaman 4: Simple Store -->
+<div class="form-container" style="display: none;">
+    <h2>Detail Produk</h2>
+    <form id="product-form" method="post" action="url_target">
+        <label for="code">Kode Barang:</label><br>
+        <input type="text" id="code" name="Kode Barang" required><br>
+        <label for="name">Nama Barang:</label><br>
+        <input type="text" id="name" name="Nama Barang" required><br>
+        <label for="year">Tahun Barang:</label><br>
+        <input type="text" id="year" name="Tahun Barang" required><br>
+        <label for="category">Kategori Barang:</label><br>
+        <select id="category" name="category" required>
+            <option value="">None</option>
+            <option value="aksesoris">Aksesoris</option>
+            <option value="perlengkapan">Perlengkapan</option>
+            <option value="makanan">Makanan</option>
+        </select><br>
+        <label for="model">Model Barang:</label><br>
+        <input type="text" id="model" name="Model Barang" required><br>
+        <label for="quantity">Jumlah Barang:</label><br>
+        <input type="number" id="quantity" name="Jumlah Barang" required><br>
+        <label for="price">Harga Barang:</label><br>
+        <input type="number" id="price" name="Harga Barang" required><br>
+        <button type="submit">Tambah Produk</button>
+    </form>
+</div>
+<div class="product-list-container" style="display: none;">
+    <h2>Daftar Produk</h2>
+    <input type="text" id="search-box" placeholder="Cari produk...">
+    <button id="search-button">Search</button>
+    <div id="no-data-found-message" style="display: none;">Data tidak ditemukan</div> <!-- Tambahkan pesan "Data tidak ditemukan" -->
+    <table class="product-list">
+        <thead>
+            <tr>
+                <th>Kode Barang</th>
+                <th>Nama Barang</th>
+                <th>Tahun Barang</th>
+                <th>Kategori Barang</th>
+                <th>Model Barang</th>
+                <th>Jumlah Barang</th>
+                <th>Harga Barang</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="product-list-body">
+            <!-- Data produk akan ditampilkan di sini -->
+        </tbody>
+    </table>
+</div>
+
+<!-- JavaScript for Form Validation and Submitting Data -->
+<script src="script.js"></script>
+<!--<footer>
+    <p>Copyright © 2023 Blabla store</p>
+</footer>-->
+</body>
+</html>

@@ -1,0 +1,335 @@
+/* Background color for the body */
+body {
+    margin: 0; /* Menghilangkan margin bawaan browser */
+    background: linear-gradient(90deg, #634FD9, #4BA4EE, #37B6DE, #4DD5C2, #63F4A6); /* Gradien vertikal untuk body */
+    height: 100vh; /* Menetapkan tinggi body sesuai dengan tinggi viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Login Section Styles */
+#login-section {
+    position: absolute; /* Menggunakan posisi absolut */
+    top: 20px; /* Menentukan jarak dari bagian atas */
+    right: 20px; /* Menentukan jarak dari kanan */
+}
+
+#login-section input[type="submit"] {
+    padding: 10px;
+}
+
+/* Header Halaman 1 Styles */
+#header-halaman-1 {
+    position: relative; /* Membuat posisi relatif untuk memastikan #login-section berada di dalam header */
+    background: linear-gradient(135deg, #5D0990, #AD45ED, #B385CF);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#header-halaman-1 h4 {
+    margin: 0;
+}
+
+#header-halaman-1 h1 {
+    margin: 10px 0;
+}
+
+/* Marketplace Section Styles */
+#marketplace-section {
+    padding: 20px;
+    background: linear-gradient(90deg, #63F4A6, #4DD5C2, #37B6DE, #4BA4EE, #634FD9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Tambahkan posisi absolut */
+    top: 50%; /* Posisi dari atas sejauh 50% */
+    left: 50%; /* Posisi dari kiri sejauh 50% */
+    transform: translate(-50%, -50%); /* Geser ke atas dan kiri sebesar setengah ukuran elemen */
+}
+
+/* Marketplace Title Styles */
+.marketplace-title {
+    color: white; /* Ubah warna teks menjadi putih */
+    text-align: center; /* Pusatkan teks */
+}
+
+/* Main Content Padding */
+main {
+    padding: 20px;
+}
+
+/* Styles untuk .login-form */
+.login-form {
+    display: none;
+    padding: 20px; /* Tambahkan padding sebesar 20px */
+    max-width: 400px; /* Tentukan lebar maksimum form */
+    border: 1px solid #ccc; /* Tambahkan border */
+    border-radius: 8px; /* Tambahkan border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
+    position: absolute; /* Tambahkan posisi absolut */
+    top: 50%; /* Posisi dari atas sejauh 50% */
+    left: 50%; /* Posisi dari kiri sejauh 50% */
+    transform: translate(-50%, -50%); /* Geser ke atas dan kiri sebesar setengah ukuran elemen */
+}
+
+/* Styles untuk form di dalam .login-form */
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles untuk label di dalam form di dalam .login-form */
+.login-form label {
+    margin-bottom: 10px;
+}
+
+/* Styles untuk input di dalam form di dalam .login-form */
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Tambahkan border untuk input */
+    border-radius: 5px; /* Tambahkan border radius */
+}
+
+/* Styles untuk tombol submit di dalam form di dalam .login-form */
+.login-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles untuk tombol submit di hover state */
+.login-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Marketplace Section Styles */
+.marketplace-section {
+    padding: 20px;
+    background: linear-gradient(90deg, #63F4A6, #4DD5C2, #37B6DE, #4BA4EE, #634FD9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Tambahkan posisi relatif */
+    text-align: center; /* Align tombol Data Produk ke tengah */
+}
+
+/* Logout Button Styles */
+nav {
+    position: absolute; /* Menggunakan posisi absolut */
+    top: 20px; /* Menentukan jarak dari bagian atas */
+    right: 20px; /* Menentukan jarak dari kanan */
+}
+
+nav button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #0056b3;
+}
+
+#marketplace-section-2 button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#marketplace-section-2 button:hover {
+    background-color: #0056b3;
+}
+
+/* Marketplace Section Styles untuk halaman 3 */
+#marketplace-section-2 {
+    padding: 20px;
+    background: linear-gradient(90deg, #63F4A6, #4DD5C2, #37B6DE, #4BA4EE, #634FD9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Tambahkan posisi absolut */
+    top: 50%; /* Posisi dari atas sejauh 50% */
+    left: 50%; /* Posisi dari kiri sejauh 50% */
+    transform: translate(-50%, -50%); /* Geser ke atas dan kiri sebesar setengah ukuran elemen */
+    width: 80%; /* Tentukan lebar elemen */
+    max-width: 600px; /* Tentukan lebar maksimum elemen */
+}
+
+/* Styles untuk tombol Data Produk di halaman 3 */
+#marketplace-section-2 button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles untuk tombol Data Produk di hover state di halaman 3 */
+#marketplace-section-2 button:hover {
+    background-color: #0056b3;
+}
+
+/* Halaman 4: Simple Store */
+#product-form {
+    max-width: 400px; /* Tentukan lebar maksimum form */
+    margin: 0 auto; /* Membuat form berada di tengah */
+}
+
+#product-form label {
+    display: block; /* Membuat label menjadi blok agar tampil satu per baris */
+    margin-bottom: 5px; /* Memberikan jarak antara setiap label */
+}
+
+#product-form input[type="text"],
+#product-form input[type="number"],
+#product-form select {
+    width: 100%; /* Menyesuaikan lebar input dengan form */
+    padding: 8px; /* Memberikan padding pada input */
+    margin-bottom: 10px; /* Memberikan jarak antara input */
+    box-sizing: border-box; /* Membuat padding dan border termasuk dalam lebar dan tinggi elemen */
+    border: 1px solid #ccc; /* Menambahkan border pada input */
+    border-radius: 5px; /* Memberikan border radius */
+}
+
+#product-form button[type="submit"] {
+    width: 100%; /* Menyesuaikan lebar button dengan form */
+    padding: 10px; /* Memberikan padding pada button */
+    background-color: #007bff; /* Warna latar belakang button */
+    color: #fff; /* Warna teks pada button */
+    border: none; /* Menghapus border button */
+    border-radius: 5px; /* Memberikan border radius */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat mengarahkan ke button */
+}
+
+#product-form button[type="submit"]:hover {
+    background-color: #0056b3; /* Warna latar belakang button saat dihover */
+}
+/* Style untuk container daftar produk */
+.product-list-container {
+    display: flex;
+    justify-content: center; /* Pusatkan container secara horizontal */
+    align-items: center; /* Pusatkan container secara vertikal */
+    flex-direction: column; /* Atur tata letak elemen secara vertikal */
+    background-color: #fff; /* Warna latar belakang */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Style untuk tabel daftar produk */
+.product-list {
+    width: 100%; /* Lebar tabel 100% */
+    border-collapse: collapse; /* Gabungkan border sel */
+    background-color: #fff; /* Warna latar belakang */
+}
+
+/* Style untuk header kolom tabel */
+.product-list th {
+    padding: 10px; /* Padding sel header */
+    background-color: #f2f2f2; /* Warna latar belakang sel header */
+    border: 1px solid #ddd; /* Border antara sel */
+}
+
+/* Style untuk sel pada tabel */
+.product-list td {
+    padding: 10px; /* Padding sel */
+    border: 1px solid #ddd; /* Border antara sel */
+    text-align: center; /* Pusatkan teks */
+}
+
+/* Style untuk input pencarian dan tombol pencarian */
+#search-box {
+    margin-bottom: 10px; /* Jarak antara input dan tombol pencarian */
+    padding: 8px; /* Padding input */
+    border: 1px solid #ccc; /* Border input */
+    border-radius: 5px; /* Border radius */
+}
+
+#search-button {
+    padding: 8px 15px; /* Padding tombol */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Hapus border tombol */
+    border-radius: 5px; /* Border radius */
+    cursor: pointer; /* Kursor pointer saat diarahkan ke tombol */
+}
+
+#search-button:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat dihover */
+}
+
+
+/* Style untuk container daftar produk */
+.product-list-container {
+    display: flex;
+    justify-content: center; /* Pusatkan container secara horizontal */
+    align-items: center; /* Pusatkan container secara vertikal */
+    flex-direction: column; /* Atur tata letak elemen secara vertikal */
+    background-color: #fff; /* Warna latar belakang */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    margin-bottom: 20px; /* Tambahkan margin-bottom untuk menghindari tumpang tindih dengan footer */
+    position: relative; /* Tambahkan posisi relatif */
+}
+
+/* Style untuk tabel daftar produk */
+.product-list {
+    width: 100%; /* Lebar tabel 100% */
+    border-collapse: collapse; /* Gabungkan border sel */
+    background-color: #fff; /* Warna latar belakang */
+    margin-bottom: 20px; /* Tambahkan margin-bottom agar ada jarak antara tabel dan footer */
+}
+
+/* CSS untuk halaman 4: Simple Store */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan formulir secara horizontal */
+    justify-content: center; /* Pusatkan formulir secara vertikal */
+    position: relative; /* Tambahkan posisi relatif */
+}
+
+#product-form {
+    max-width: 400px; /* Tentukan lebar maksimum form */
+    margin-top: 20px; /* Berikan margin atas untuk menyesuaikan posisi */
+    padding: 20px; /* Berikan padding untuk mengelilingi form dengan box */
+    border: 1px solid #ccc; /* Tambahkan border untuk mengelilingi form dengan box */
+    border-radius: 10px; /* Berikan radius sudut pada box */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Perbaikan untuk tulisan "Detail Produk" di tengah */
+.form-container h2 {
+    text-align: center; /* Pusatkan tulisan "Detail Produk" */
+}
+
+/* CSS untuk tombol di dalam kolom aksi */
+.edit-btn,
+.delete-btn {
+    display: flex;
+    justify-content: center; /* Pusatkan tombol secara horizontal */
+    align-items: center; /* Pusatkan tombol secara vertikal */
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px; /* Menambahkan jarak antara tombol */
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #0056b3;
+}
